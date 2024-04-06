@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="semana03_A" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mCa-l5-cBs">
+                                <rect key="frame" x="20" y="173" width="353" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Buscar"/>
+                                <connections>
+                                    <action selector="onTapBuscar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="axU-WP-xgO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dg5-kF-41s">
+                                <rect key="frame" x="20" y="228" width="353" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Devolver"/>
+                                <connections>
+                                    <action selector="onTapDevolver:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JO4-Qm-XFu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lN-wf-rfx">
+                                <rect key="frame" x="20" y="283" width="353" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Prestar"/>
+                                <connections>
+                                    <action selector="onTapPrestar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LrC-JI-h4f"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D4S-5A-oeV">
+                                <rect key="frame" x="20" y="119" width="353" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="inputBusqueda:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="RLC-1B-gmD"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mCa-l5-cBs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="90D-VO-hCq"/>
+                            <constraint firstItem="D4S-5A-oeV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9cW-Gt-iRG"/>
+                            <constraint firstItem="1lN-wf-rfx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ah2-DJ-6Dd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mCa-l5-cBs" secondAttribute="trailing" constant="20" id="Gw7-iZ-l3i"/>
+                            <constraint firstItem="Dg5-kF-41s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Hfq-jv-kI3"/>
+                            <constraint firstItem="1lN-wf-rfx" firstAttribute="top" secondItem="Dg5-kF-41s" secondAttribute="bottom" constant="20" id="WY5-bG-xpL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dg5-kF-41s" secondAttribute="trailing" constant="20" id="Xk3-lr-CYY"/>
+                            <constraint firstItem="D4S-5A-oeV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="kKT-Cc-2R6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D4S-5A-oeV" secondAttribute="trailing" constant="20" id="mQQ-Kv-mvp"/>
+                            <constraint firstItem="mCa-l5-cBs" firstAttribute="top" secondItem="D4S-5A-oeV" secondAttribute="bottom" constant="20" id="nvx-QU-iQT"/>
+                            <constraint firstItem="Dg5-kF-41s" firstAttribute="top" secondItem="mCa-l5-cBs" secondAttribute="bottom" constant="20" id="pWF-6m-tHx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1lN-wf-rfx" secondAttribute="trailing" constant="20" id="tWP-MM-H2Y"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnBuscarTitulo" destination="mCa-l5-cBs" id="7g8-RM-O62"/>
+                        <outlet property="btnDevolver" destination="Dg5-kF-41s" id="hxw-kL-SRC"/>
+                        <outlet property="btnPrestar" destination="1lN-wf-rfx" id="xM9-rC-fmd"/>
+                        <outlet property="txtFieldBusqueda" destination="D4S-5A-oeV" id="to8-Fs-ttj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-327" y="-220"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
